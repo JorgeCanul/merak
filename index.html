@@ -3,24 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./vendor/vendor.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="./vendor/vendor.css"> -->
     <link rel="stylesheet" href="style.css">
     <script src="./index.js" defer></script>
     <link rel="shortcut icon" href="./mikeLogo.jpg" type="image/png">
     <title>Merak MFG</title>
 </head>
 <body>
-    <nav class="navigation">
-        <div class="row">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navigation">
+        <div class="container">
             <img class="logo" src="mikeLogo.jpg" alt="">
-            <ul class="mainNav">
-                <li class="link"> <a href="#">home</a></li>
-                <li class="link"> <a href="#services">services</a></li>
-                <li class="link"> <a href="#about">about</a></li>
-                <li class="link"> <a href="#contact">contact</a></li>
-            </ul> <a href=""></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto mainNav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">services</a>
+            </li>
+           
+            <li class="nav-item">
+              <a class="nav-link" href="#about">about</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#contact">contact</a>
+              </li>
+          </ul>
         </div>
-    </nav>
+        </div>
+        
+      </nav>
+
     <header>
         <div class="row">
             <div class="text-hero">
@@ -30,14 +47,11 @@
                         <span class="go2">weld</span> <br> <br>  <br> 
                         <span class="go3">machine</span> <br> <br>  <br>
                         <span class="go4">design</span>
-                        <span>Super dupper</span>
                         </h1>
                       <div class='icon-scroll'></div>
                     </div>
-                      
                   </section>
                 <!-- <h1>Weld <br> machine <br> design</h1> -->
-           
             </div>
         </div>
     </header>
@@ -69,7 +83,7 @@
 
 
 
-    <div class="showcase-wrapper">
+     <div class="showcase-wrapper">
         <div class="showcase-items">
             <div class="portofolio-item-wrapper">
                 <div class="portofolio-img-background" style="background-image: url(gallery1.jpg)"></div>
@@ -160,7 +174,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> 
 
   
     <section class="section-features" id="about">
@@ -195,22 +209,19 @@
             <p> © <span class="allrights"></span> All rights reserved. | webside created by <a href="#">J.C</a> </p>
         </div>
     </footer>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.1.2/dist/ionicons/ionicons.esm.js"></script>
     <script type="text/javascript">
     // detect if mobile browser. regex -> http://detectmobilebrowsers.com
     var isMobile = (function(a){return /(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows ce|xda|xiino/i.test(a)||/1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(a.substr(0,4))})(navigator.userAgent||navigator.vendor||window.opera);
-    
-    if (isMobile) {$("body").addClass("mobiletouch");}
+ 
     </script>
-    
-    <script type="text/javascript" src="https://worthy.beer/wp-content/themes/worthybrewingtheme/js/extra/TweenMax.min.js"></script>
-    <!--<script type="text/javascript" src="https://worthy.beer/wp-content/themes/worthybrewingtheme/js/extra/iscroll-probe.js"></script>-->
-    <script type="text/javascript" src="https://worthy.beer/wp-content/themes/worthybrewingtheme/js/extra/ScrollMagic.min.js"></script>
-    <script type="text/javascript" src="https://worthy.beer/wp-content/themes/worthybrewingtheme/js/extra/animation.gsap.min.js"></script>
+    <script src="./controlMagic.js"></script>
+    <script src="./magicAnimation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.4.0/ScrollTrigger.min.js"></script>
     <script src="./gsap-public/src/all.js"></script>
     <script type="text/javascript">
@@ -223,18 +234,27 @@
                   }
               });
           }
-        
-      
+      </script>
+      <script type="text/javascript">
+        var controller;
+        if (isMobile) {
+              // init the controller
+              controller = new ScrollMagic.Controller({
+                  globalSceneOptions: {
+                      triggerHook: "onLeave"
+                  }
+              });
+          }
       </script>
     
     <script type="text/javascript">
       // wrap each title letter
     //   $("#intro>h1").wrapEach(/(.)/g, "<span>$1</span>");
     
-    //   var reveal1 = new TimelineMax()
-    //       .add([
-    //           TweenMax.from("#intro>h1>.go1", 1, {scale: .1,y:6}),
-    //           ]);
+      var reveal1 = new TimelineMax()
+          .add([
+              TweenMax.from("#intro>h1>.go1", 1, {scale: .1,y:6}),
+              ]);
     
       var reveal2 = new TimelineMax()
           .add([
@@ -292,7 +312,5 @@
           .setTween(reveal4)
           .addTo(controller);
     </script>
-    
-  
 </body>
 </html>
