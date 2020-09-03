@@ -8,12 +8,12 @@ $(function() {
       } else {
           $('nav').removeClass('nav-border');
       }
-      if(scrolled > scroll) {
-          $('.navigation').removeClass('sticky');
-      } else {
-          $('.navigation').addClass('sticky');
-      }
-      scroll = $(document).scrollTop();
+      // if(scrolled > scroll) {
+      //     $('.navigation').removeClass('sticky');
+      // } else {
+      //     $('.navigation').addClass('sticky');
+      // }
+      // scroll = $(document).scrollTop();
   })
 })
 // nav-border
