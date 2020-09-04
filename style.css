@@ -170,9 +170,11 @@ border-color: var(--logo-color);
 }
 
 section {
-    padding: 2rem;
+    padding: 0;
     line-height: 100%;
     letter-spacing: 0.5px;
+    margin-left: 30px !important;
+
 }
 
 .services {
@@ -552,147 +554,7 @@ footer {
 
 
 
-@media (max-width: 750px) {
-    header {
-        height: 80vh;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    /* h1 {
-        font-size: 1.5rem;
-        color: #fff;
-        margin-bottom: 1.125rem;
-    } */
 
-    h2 {
-        font-size: 60%;
-        text-align: center;
-        word-spacing: 1px;
-        letter-spacing: 0.2px;
-    }
-    
-    h2::after{
-        width: 100px;
-    }
-    /* img.logo {
-        border-radius: 50% !important;
-    }
-    .logo {
-        height: 2.25rem;
-        width: 2.25rem;
-        margin-left: 45px;
-        margin-top: 5px;
-    } */
-
-    /* .mainNav {
-        color: #fff;
-        display: inline-flex;
-        align-items: center;
-        margin-right: 20px;
-        padding: 0;
-    } */
-    
-    li {
-        margin-right: 1px;
-        font-size: 15px;
-        list-style-type: none;
-    }
-    /* .mainNav li a {
-        font-size: 15px;
-    } */
-
-    .text-hero {
-        padding-top: 30%;
-        padding-left: 10%;
-    }
-
-    .btn:link,
-    .btn:visited {
-    padding: 8px;
-    font-size: 0.7rem;
- }
-
- .services-box {
-    width: 100%;
-    margin-left: 1%;
-    align-items: center;
-    text-align: center;
- }
-
- section {
-    padding: 1rem;
- }
-
- .icon-big {
-    font-size: 180%;
-}
- .long-text {
-    font-size: 70%;
-    line-height: 140%;
-    width: 80%;
-    padding: 1.25rem;
-    margin-left: 0;
-    text-align: center;
-    letter-spacing: 1px;
-}
- .gallery {
-    width: 60%;
-}
-
-.showCase {
-    list-style: none;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.showCase li {
-    display: inline-block; 
-    width: 25%;
-}
-
-.image {
-    width: 120%;
-    height: auto;
-}
-.img-text-wrapper {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-.showcase-items {
-    display: ruby;
-    grid-template-columns: 1fr 1fr !important;
-    grid-gap: 2px;
-}
-
-.icon {
-   font-size: 200%; 
-}
-.contact-info {
-    display: grid !important;
-    align-items: center;
-    padding-left: 30px !important;
-    margin-bottom: 0;
-    
-}
-
-.contact-info a {
-    
-    text-decoration: none;
-    font-size: 15px;
-    color: #fff;
-}
-.contact-info li:last-of-type {
-    padding-top:  10px !important;
-}
-.social-items {
-    padding-left: 0;
-}
-.social-items li {
-    font-size: 20px;
-}
- 
-}
 
 
 
@@ -890,6 +752,15 @@ footer {
         right: 12px;
         padding: 1px !important;
     }
+    .img-text-wrapper {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    .portofolio-img-background {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        
+    }
     
     }
     
@@ -915,11 +786,10 @@ footer {
     .mainNav {
         position: relative !important;
         margin-top: 10px !important;
-        right: 60% !important;
+        margin-right: 75px !important;
     }
     .mainNav li a {
         font-size: 15px !important;
-        margin-right: 85px !important;
     }
     .navbar-toggler {
         position: relative;
@@ -954,12 +824,11 @@ footer {
         letter-spacing: 7px;
     }
 
-    .logo {
-        margin-left: 1px !important;
+    img.logo {
+        margin-left: -40px !important;
         position: relative;
         height: 2rem !important;
         width: 2rem !important;
-        /* top: 15px !important; */
     }
     .bg-light {
         padding: 10px !important;
@@ -969,14 +838,11 @@ footer {
     }
     .mainNav {
         position: relative !important;
-        right: 70% !important;
         align-items: flex-start;
         margin-top: 15px !important;
     }
     .mainNav li a {
         font-size: 15px;
-        right: 100% !important;
-        /* top: 10px !important; */
     }
     .navbar-toggler {
         position: relative;
@@ -1043,7 +909,7 @@ footer {
         }
        
         .text-hero {
-            padding-top: 0.1%;
+            padding-top: 10% !important;
         }
        
         .navbar-toggler:focus,
@@ -1054,7 +920,7 @@ footer {
         border-color: var(--logo-color);
         }
         header {
-            height: 120vh;
+            height: 140vh;
         }
         .img-text-wrapper {
             padding-left: 0 !important;
@@ -1064,6 +930,9 @@ footer {
     
     @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
     /* Styles */
+    .text-hero {
+        padding-top: 40% !important;
+    }
     h1 {
         line-height: 0.5;
         font-size: 60px;
@@ -1097,6 +966,10 @@ footer {
         width: 1.0em;
         height: 1.0em;
     }
+    .img-text-wrapper {
+        padding-right: 0 !important;
+        padding-left:  0 !important;
+    }
     
     }
     
@@ -1118,21 +991,69 @@ footer {
     /* Styles */
     }
     
-    /* Samsung Galaxy S4 ----------- */
-    @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-    /* Styles */
-    }
     
-    @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-    /* Styles */
+
+    /* ///// responsive  */
+
+    @media only screen and (-webkit-device-pixel-ratio: 2) and (max-device-height: 667px) and (min-device-width: 375px) and (orientation: landscape) {
+        h1 {
+            line-height: 0.5;
+            font-size: 60px !important;
+            letter-spacing: 4 !important;
+        }
+        .logo {
+            left: 1%;
+            position: relative;
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+        
+        .mainNav {
+            position: relative;
+            right: 1px !important;
+            align-items: flex-start;
+            padding-top: 5px !important;
+        }
+       
+       
     }
-    
-    /* Samsung Galaxy S5 ----------- */
-    @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 3){
-    /* Styles */
+
+
+    @media only screen and (-webkit-device-pixel-ratio: 2) and (max-device-height: 768px) and (min-device-width: 768px) and (orientation: portrait) {
+        .navbar-toggler {
+            position: relative;
+            right: 12px;
+            padding: 8px;
+        }
+        .navbar-toggler-icon {
+            width: 1.0em;
+            height: 1.0em;
+        }
+        .mainNav {
+            position: relative;
+            right: 520px !important;
+            align-items: flex-start;
+            padding-top: 5px !important;
+        }
+        .mainNav li a {
+            font-size: 25px !important;
+            padding: 10px !important;
+        }
+        .img-text-wrapper {
+            padding: 0 0;
+        }
+        
     }
-    
-    @media only screen and (min-device-width: 360px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
-    /* Styles */
+
+    @media only screen and (-webkit-device-pixel-ratio: 2) and (max-device-height: 425px) and (min-device-width: 768px) and (orientation: portrait)  {
+        h1 {
+            line-height: 0.5;
+            font-size: 10px !important;
+            letter-spacing: 2 !important;
+            color: saddlebrown !important;
+        }
+        .img-text-wrapper {
+            padding-left: 0!important;
+            padding-right: 0 !important;
+        }
     }
-    
