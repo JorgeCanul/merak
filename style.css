@@ -280,8 +280,8 @@ section {
     align-content: center;
     height: 100%;
     text-align: center;
-    padding-left: 80px;
-    padding-right: 80px;
+    /* padding-left: 80px;
+    padding-right: 80px; */
 }
 
 .logo-wrapper ion-icon {
@@ -316,10 +316,10 @@ section {
 
 
 
-.showcase-items {
+/* .showcase-items {
     display: grid;;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-}
+} */
 
 .portofolio-item-wrapper{
     position: relative;
@@ -342,8 +342,8 @@ section {
     align-content: center;
     height: 100%;
     text-align: center;
-    padding-left: 80px;
-    padding-right: 80px;
+    /* padding-left: 80px;
+    padding-right: 80px; */
 }
 
 .logo-wrapper ion-icon {
@@ -619,6 +619,18 @@ footer {
     /* iPhone 5 ----------- */
     @media only screen and (-webkit-device-pixel-ratio: 2) and (max-device-height: 667px) and (min-device-width: 375px) and (orientation: landscape){
     /* Styles */
+    body {
+        background-color: red !important;
+    }
+    header {
+        height: 10vh !important;
+    }
+    h1 {
+        line-height: 0.3 !important;
+        font-size: 40px !important;
+        letter-spacing: 3px;
+    }
+
     .logo {
         left: 40px !important;
         position: relative !important;
@@ -636,6 +648,9 @@ footer {
         margin-right: -20px !important;
         align-items: flex-start;
     }
+    .text-hero {
+        padding-top: 1% !important;
+    }
     header {
         height: 130vh !important;
     }
@@ -643,13 +658,16 @@ footer {
     
     @media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
     /* Styles */
+    body {
+        background-color: saddlebrown !important;
+    }
     h1 {
-        line-height: 0.5;
-        font-size: 40px !important;
+        line-height: 0.4 !important;
+        font-size: 60px !important;
         letter-spacing: 3px;
     }
     .text-hero {
-        padding-top: 5% !important;
+        padding-top: 20% !important;
     }
     .bg-light {
         padding: 20px !important;
@@ -672,16 +690,24 @@ footer {
     .mainNav {
         position: relative !important;
         margin-top: 20px !important;
-        right: 165px !important;
+        right: 180px !important;
         align-items: flex-start;
+    }
+    .showcase-items {
+        display: ruby !important;
+        grid-template-columns: 1fr 1fr !important;
+        grid-gap: 2px !important;
     }
     }
     
     /* iPhone 6, 7, 8 ----------- */
     @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
     /* Styles */
+    /* body{
+        background-color: saddlebrown !important;
+    } */
     h1 {
-        line-height: 0.3;
+        line-height: 0.4;
         font-size: 60px !important;
         letter-spacing: 7px;
     }
@@ -689,44 +715,7 @@ footer {
         height: 115vh;
     }
     .text-hero {
-        padding-top: 5% !important;
-    }
-    .logo {
-        margin-left: 10px !important;
-        position: relative;
-        height: 2.5rem;
-        width: 2.5rem;
-    }
-    .bg-light {
-        padding: 10px !important;
-    }
-    .mainNav {
-        position: relative !important;
-        margin-top: 15px !important;
-        right: 440px !important;
-        align-items: flex-start;
-    }
-    .navbar-toggler-icon {
-        width: 1em !important;
-        height: 1em !important;
-    }
-    .navbar-toggler {
-        position: relative;
-        right: 12px !important;
-        padding: 1px !important;
-    }
-        
-    }
-    
-    @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-    /* Styles */
-    h1 {
-        line-height: 0.3 !important;
-        font-size: 55px !important;
-        letter-spacing: 3px !important;
-    }
-    .text-hero {
-        padding-top: 10% !important;
+        padding-top: 9% !important;
     }
     .logo {
         margin-left: 1px !important;
@@ -740,7 +729,51 @@ footer {
     .mainNav {
         position: relative !important;
         margin-top: 15px !important;
-        right: 215px !important;
+        right: 400px !important;
+        align-items: flex-start;
+    }
+    .navbar-toggler-icon {
+        width: 1em !important;
+        height: 1em !important;
+    }
+    .navbar-toggler {
+        position: relative;
+        left: 12px !important;
+        padding: 1px !important;
+    }
+    .img-text-wrapper {
+        padding-right: 0 !important;
+        padding-left:  0 !important;
+    }
+        
+    }
+    
+    @media only screen and (min-device-width: 375px) and (max-device-height: 667px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+    /* Styles */
+    /* body{
+        background-color: saddlebrown !important;
+    } */
+    h1 {
+        line-height: 0.5 !important;
+        font-size: 55px !important;
+        letter-spacing: 3px !important;
+    }
+    .text-hero {
+        padding-top: 20% !important;
+    }
+    .logo {
+        margin-left: 1px !important;
+        position: relative;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .bg-light {
+        padding: 10px !important;
+    }
+    .mainNav {
+        position: relative !important;
+        margin-top: 15px !important;
+        right: 190px !important;
         align-items: flex-start;
     }
     .navbar-toggler-icon {
@@ -756,10 +789,19 @@ footer {
         padding-left: 0 !important;
         padding-right: 0 !important;
     }
-    .portofolio-img-background {
-        display: grid !important;
+    
+    /* .img-text-wrapper {
+        padding-right: 0 !important;
+        padding-left:  0 !important;
+    }
+    .img-text-wrapper {
+        padding-right: 0 !important;
+        padding-left:  0 !important;
+    } */
+    .showcase-items {
+        display: ruby !important;
         grid-template-columns: 1fr 1fr !important;
-        
+        grid-gap: 2px !important;
     }
     
     }
@@ -926,10 +968,12 @@ footer {
             padding-left: 0 !important;
             padding-right: 0 !important;
         }
+        
     }
     
     @media only screen and (min-device-width: 375px) and (max-device-height: 812px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 3){
     /* Styles */
+    
     .text-hero {
         padding-top: 40% !important;
     }
@@ -970,6 +1014,11 @@ footer {
         padding-right: 0 !important;
         padding-left:  0 !important;
     }
+    .showcase-items {
+        display: ruby !important;
+        grid-template-columns: 1fr 1fr !important;
+        grid-gap: 2px !important;
+    }
     
     }
     
@@ -982,9 +1031,55 @@ footer {
     /* Styles */
     }
     
-    /* Samsung Galaxy S3 ----------- */
-    @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    /* Samsung Galaxy S5 ----------- */
+    @media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3)
+{
     /* Styles */
+    body {
+        background-color: seagreen !important;
+    }
+    h1 {
+        line-height: 0.5 !important;
+        font-size: 55px !important;
+        letter-spacing: 3px !important;
+    }
+    .text-hero {
+        padding-top: 20% !important;
+    }
+    .logo {
+        margin-left: 1px !important;
+        position: relative;
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+    .bg-light {
+        padding: 10px !important;
+    }
+    .mainNav {
+        position: relative !important;
+        margin-top: 15px !important;
+        right: 180px !important;
+        align-items: flex-start;
+    }
+    .navbar-toggler-icon {
+        width: 1em !important;
+        height: 1em !important;
+    }
+    .navbar-toggler {
+        position: relative;
+        right: 12px;
+        padding: 1px !important;
+    }
+    .img-text-wrapper {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    .showcase-items {
+        display: ruby !important;
+        grid-template-columns: 1fr 1fr !important;
+        grid-gap: 2px !important;
+    }
     }
     
     @media only screen and (min-device-width: 320px) and (max-device-height: 640px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
@@ -995,7 +1090,7 @@ footer {
 
     /* ///// responsive  */
 
-    @media only screen and (-webkit-device-pixel-ratio: 2) and (max-device-height: 667px) and (min-device-width: 375px) and (orientation: landscape) {
+    /* @media only screen and (-webkit-device-pixel-ratio: 2) and (max-device-height: 667px) and (min-device-width: 375px) and (orientation: landscape) {
         h1 {
             line-height: 0.5;
             font-size: 60px !important;
@@ -1016,10 +1111,10 @@ footer {
         }
        
        
-    }
+    } */
 
 
-    @media only screen and (-webkit-device-pixel-ratio: 2) and (max-device-height: 768px) and (min-device-width: 768px) and (orientation: portrait) {
+    /* @media only screen and (-webkit-device-pixel-ratio: 2) and (max-device-height: 768px) and (min-device-width: 768px) and (orientation: portrait) {
         .navbar-toggler {
             position: relative;
             right: 12px;
@@ -1043,7 +1138,7 @@ footer {
             padding: 0 0;
         }
         
-    }
+    } */
 
     @media only screen and (-webkit-device-pixel-ratio: 2) and (max-device-height: 425px) and (min-device-width: 768px) and (orientation: portrait)  {
         h1 {
