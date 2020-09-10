@@ -10,6 +10,8 @@
     margin: 0;
 } */
 
+
+
 html {
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
@@ -17,8 +19,6 @@ html {
     scroll-behavior: smooth;
     background-color: var(--body-main);
 }
-
-
 
 :root{
     --content-main: #767c77;
@@ -98,6 +98,7 @@ img.logo {
     border-radius: 50% !important;
     margin-top: 15px;
     position: relative;
+    /* box-shadow: var(--box-shadow); */
 }
 
 nav {
@@ -269,7 +270,7 @@ section {
     position: relative;
 }
 
-.portofolio-img-background {
+/* .portofolio-img-background {
     display: grid;;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     height: 350px;
@@ -277,7 +278,7 @@ section {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
+} */
 
 .img-text-wrapper {
     position: absolute;
@@ -288,8 +289,6 @@ section {
     align-content: center;
     height: 100%;
     text-align: center;
-    /* padding-left: 80px;
-    padding-right: 80px; */
 }
 
 .logo-wrapper ion-icon {
@@ -322,16 +321,6 @@ section {
     justify-content: center;
 }
 
-
-
-.showcase-items {
-    display: grid;;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.portofolio-item-wrapper{
-    position: relative;
-}
 
 .portofolio-img-background {
     height: 350px;
