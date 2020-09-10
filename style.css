@@ -6,9 +6,9 @@
 /*-------------------*/
     /* headings */
 /*-------------------*/
-body {
+/* body {
     margin: 0;
-}
+} */
 
 html {
     font-size: 30px;
@@ -64,6 +64,10 @@ h3 {
     font-size: 72%;
 }
 
+p {
+    margin-bottom: 0;
+}
+
 
 /*-------------------*/
     /* NAV */
@@ -78,10 +82,10 @@ img.logo {
     width: 3.25rem;
     border-radius: 50% !important;
     margin-top: 15px;
-    position: absolute;
+    position: relative;
 }
 nav {
-    background-color: var(--main);
+    background-color: var(--main) !important;
     z-index: 2;
     position: -webkit-sticky;
     position: sticky;
@@ -89,13 +93,20 @@ nav {
     border-bottom: 2px solid transparent;
 }
 
+.bg-light {
+    background-color: var(--main) !important;
+    /* z-index: 3;
+    top: 0.1px;
+    border-bottom: 2px solid transparent; */
+}
 
-.mainNav {
+
+/* .mainNav {
     float: right;
     font-size: 30px;
     margin-right: 10px;
     align-items: center;
-}
+} */
 
 li {
     margin-left: 12px;
@@ -127,14 +138,25 @@ header {
     background-position: center;
 }
 
-.text-hero {
-    padding-top: 5%;
+.navbar-toggler {
+    position: relative;
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    left: .5rem;
 }
 
-.nav-border {
+/* .text-hero {
+    padding-top: 5%;
+} */
+
+/* .nav-border {
     border-bottom: 3px solid var(--clr-main);
     transition: 1s;
-}
+} */
 
 /*-------------------*/
     /* SECTION SERVICES */
@@ -167,7 +189,7 @@ section {
 /* re */
     /* PHARAGRAS  */
 /*-------------------*/
-.long-text {
+/* .long-text {
     font-size: 70%;
     line-height: 140%;
     width: 70%;
@@ -175,12 +197,12 @@ section {
     margin-left: 15%;
     text-align: center;
     letter-spacing: 1px;
-}
+} */
 
-.row {
+/* .row {
     max-width: 1110px;
     margin: 0 auto;
-}
+} */
 
 
 /*-------------------*/
@@ -261,8 +283,8 @@ section {
     align-content: center;
     height: 100%;
     text-align: center;
-    padding-left: 80px;
-    padding-right: 80px;
+    /* padding-left: 80px;
+    padding-right: 80px; */
 }
 
 .logo-wrapper ion-icon {
@@ -323,8 +345,8 @@ section {
     align-content: center;
     height: 100%;
     text-align: center;
-    padding-left: 80px;
-    padding-right: 80px;
+    /* padding-left: 80px;
+    padding-right: 80px; */
 }
 
 .logo-wrapper ion-icon {
@@ -370,162 +392,7 @@ section {
     color: #fff;
 }
 
-/* //////////////////////// @MEDIA //////////////////////////////////// */
 
-
-@media (max-width: 750px) {
-    header {
-        height: 80vh;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    h1 {
-        font-size: 1.5rem;
-        color: #fff;
-        margin-bottom: 1.125rem;
-    }
-
-    h2 {
-        font-size: 60%;
-        text-align: center;
-        word-spacing: 1px;
-        /* word-spacing: 2px; */
-        letter-spacing: 0.2px;
-    }
-    
-    h2::after{
-        width: 100px;
-    }
-    img.logo {
-        border-radius: 50% !important;
-    }
-    .logo {
-        height: 2.25rem;
-        width: 2.25rem;
-        float: left;
-        margin-left: 45px;
-        margin-top: 5px;
-        /* align-items: center; */
-    }
-
-    /* nav {
-        background-color: blue !important;
-    } */
-
-    .mainNav {
-        color: #fff;
-        display: inline-flex;
-        align-items: center;
-        margin-right: 20px;
-        padding: 0;
-    }
-    
-    li {
-        margin-right: 1px;
-        font-size: 15px;
-        list-style-type: none;
-        /* align-items: center; */
-    }
-    .mainNav li a {
-        font-size: 15px;
-    }
-
-    .text-hero {
-        padding-top: 30%;
-        padding-left: 10%;
-    }
-
-    .btn:link,
-    .btn:visited {
-    padding: 8px;
-    font-size: 0.7rem;
- }
-
- .services-box {
-    width: 100%;
-    margin-left: 1%;
-    align-items: center;
-    text-align: center;
- }
-
- section {
-    padding: 1rem;
- }
-
- .icon-big {
-    font-size: 180%;
-    /* color:  var(--clr-main); */
-}
- .long-text {
-    font-size: 70%;
-    line-height: 140%;
-    width: 80%;
-    padding: 1.25rem;
-    margin-left: 0;
-    text-align: center;
-    letter-spacing: 1px;
-}
- .gallery {
-    width: 60%;
-}
-
-.showCase {
-    list-style: none;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.showCase li {
-    display: inline-block; 
-    width: 25%;
-}
-
-.image {
-    width: 120%;
-    height: auto;
-}
-/* /////// SHOCASE GRID /////// */
-.img-text-wrapper {
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-}
-
-.showcase-items {
-    display: ruby;
-    grid-template-columns: 1fr 1fr !important;
-    grid-gap: 2px;
-}
-
-.icon {
-   font-size: 200%; 
-}
-/* ///////FOOTER /////// */
-.contact-info {
-    display: grid !important;
-    /* justify-content: center; */
-    align-items: center;
-    padding-left: 30px !important;
-    margin-bottom: 0;
-    
-}
-
-.contact-info a {
-    
-    text-decoration: none;
-    font-size: 15px;
-    color: #fff;
-}
-.contact-info li:last-of-type {
-    padding-top:  10px !important;
-}
-.social-items {
-    padding-left: 0;
-}
-.social-items li {
-    font-size: 20px;
-}
- 
-}
 
 
 /*-------------------*/
@@ -607,7 +474,68 @@ footer {
 
 
 
+@media screen and (max-width: 500px) 
+and (min-width: 321px) {
+    body {
+        background-color: seagreen;
+    }
+    .mainNav {
+        float: left;
+        font-size: 30px;
+        margin-right: 10px;
+        align-items: start;
+        margin-top: 12px;
+    }
+    header {
+        height: 90vh;
+    }
+    h1 {
+        font-size: 50px;
+        line-height: 0.7;
+        word-spacing: 4px;
+    }
+    #intro span {
+        padding: 10px;
+    }
+}
 
+@media screen and (max-width: 320px) 
+and (min-width: 300px) {
+    body {
+        background-color: pink;
+    }
+    header {
+        height: 110vh !important;
+    }
+
+    section {
+        padding: 1rem;
+        line-height: 100%;
+        letter-spacing: 0.5px;
+    }
+
+    .mainNav {
+        float: left;
+        font-size: 30px;
+        margin-right: 10px;
+        align-items: start;
+        margin-top: 12px;
+    }
+
+    .navbar-toggler {
+        padding: .20rem .5rem;
+        font-size: 1rem;
+    }
+   
+    h1 {
+        font-size: 50px;
+        line-height: 0.7;
+        word-spacing: 4px;
+    }
+    #intro span {
+        padding: 10px;
+    }
+}
 
 
 
@@ -688,3 +616,10 @@ footer {
  }
 
 } */
+
+
+/* onScroll add class  */
+.nav-border {
+    border-bottom: 3px solid var(--clr-main);
+    transition: 1s;
+}
