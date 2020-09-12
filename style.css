@@ -368,9 +368,7 @@ footer {
 
 @media screen and (max-width: 500px) 
 and (min-width: 321px) {
-    body {
-        background-color: seagreen;
-    }
+    
     .mainNav {
         float: left;
         font-size: 30px;
