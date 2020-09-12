@@ -1,6 +1,3 @@
-
-
-
 $(function() {
   var scroll = $(document).scrollTop();
   var navHeight = $('vav').outerHeight();
@@ -37,22 +34,23 @@ function myFunction() {
 
 const image = document.querySelectorAll('.portofolio-item-wrapper');
 
-image.forEach(img => {
-  img.addEventListener('mouseover', () => {
+image.forEach(function(img) {
+  img.addEventListener('mouseover', function() {
       img.childNodes[1].classList.add('img-darken');
   });
-  img.addEventListener('mouseout', () => {
+  img.addEventListener('mouseout', function() {
       img.childNodes[1].classList.remove('img-darken');
   });
 });
 
 ///////////////////////// Footer rights ///////////
-let date = new Date().getFullYear();
+var date = new Date().getFullYear();
 console.log(date);
 
-let currentYear = document.querySelector('.allrights');
+var currentYear = document.querySelector('.allrights');
 currentYear.innerHTML = date;
 
-let logoAni = gsap.from('.logo', {duration: 2.5, opacity: 0, scale:0.1, ease: 'back'})
+var logoAni = gsap.from('.logo', {duration: 2.5, opacity: 0, scale:0.1, ease: 'back'})
 
 //   gsap.registerPlugin(ScrollTrigger);
+

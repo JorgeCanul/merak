@@ -1,0 +1,185 @@
+/* ////////////// iPhone X,  */
+@media screen and (max-width: 991.98px) 
+and (orientation: landscape) {
+    body {
+        background-color: slategray;
+    }
+    .mainNav li a {
+        
+        border-bottom: none !important;
+    }
+    .mainNav li a:hover {
+     
+        border-bottom: none !important;
+    }
+    .logo {
+        height: 2.25rem;
+        width: 2.25rem;
+        margin-left: 1rem;
+        margin-top: 5px;
+    }
+
+    .navbar-toggler {
+        padding: .10rem .3rem !important;
+        font-size: 1rem !important;
+        margin-right: 1rem !important;
+    }
+    .navbar-toggler-icon {
+        background-size: 70% 70% !important;
+    }
+
+    .navbar-nav {
+        padding-left: 40px !important;
+    }
+
+    header {
+        height: 160vh !important;
+    }
+    
+    .text-hero {
+        padding-top: 1% !important;
+    }
+
+    #intro span {
+        padding: 90px !important;
+    }
+
+    h1 {
+        font-size: 1.8rem !important;
+        line-height: 0.4 !important;
+        word-spacing: 4px !important;
+        font-weight: bold !important;
+    }
+
+    h2::after {
+        width: 30px !important;
+        
+    }
+    .showcase-items {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+    }
+    .img-text-wrapper {
+        height: 100% !important;
+    }
+    .portofolio-img-background {
+        height: 9.375rem !important;
+    }
+    .contact-info {
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        
+    }
+    .social-items {
+        text-align: center;
+        text-align: center; 
+        padding: 0 !important;
+    }
+    .social-items li a {
+      margin-left: 10px !important; 
+    }
+}
+
+/* /////////// iPhone 4 //////////////// */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3)
+{
+     body {
+        background-color: blue;
+    } 
+    header {
+        height: 180vh !important;
+    }
+    .text-hero {
+        padding-top: 15%;
+    }
+
+    .contact-info li a{
+        display: inline-block;
+        font-size: 12px;
+    }
+    .about h2 {
+        padding: 10px !important;
+        margin-bottom: 2rem !important;
+    }
+    .showcase-items {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+    }
+    .img-text-wrapper {
+        height: 100% !important;
+    }
+    .portofolio-img-background {
+        height: 7.375rem !important;
+    }
+    
+}
+
+
+/* ////////////// iPhone 6, 7, 8 +,  */
+@media screen and (max-width: 767.98px) 
+and (orientation: landscape) {
+    body {
+        background-color: salmon;
+    }
+    .text-hero {
+        padding-top: 1% !important;
+    }
+
+    #intro span {
+        padding: 110px !important;
+    }
+
+    h1 {
+        font-size: 1.8rem !important;
+        line-height: 0.5 !important;
+        word-spacing: 4px !important;
+        font-weight: bold !important;
+    }
+}
+
+
+
+/* //// iPhone 4/ iPhone 5/se//// */
+@media screen and (max-width: 575.98px)
+and (orientation: landscape)  {
+    body {
+        background-color: turquoise;
+    }
+    
+    #intro span {
+        padding: 70px !important;
+    }
+}
+
+/*iPhone 4 and 4S landscape*/
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) 
+and (orientation : landscape) { 
+
+    body {
+        background-color: yellow;
+    }
+    header {
+        height: 170vh !important;
+    }
+    
+    .text-hero {
+        padding-top: 10% !important;
+    }
+
+    #intro span {
+        padding: 90px !important;
+    }
+
+    h1 {
+        font-size: 1.8rem !important;
+        line-height: 0.4 !important;
+        word-spacing: 4px !important;
+        font-weight: bold !important;
+    }
+}
+ 
+ 
