@@ -3,9 +3,9 @@
 */
 @media screen and (max-width: 575.98px)
 and (orientation: portrait)  {
-    body {
+    /* body {
         background-color: turquoise;
-    }
+    } */
     .mainNav li a {
         
         border-bottom: none !important;
@@ -91,9 +91,9 @@ and (orientation: portrait)  {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3)
 {
-     body {
+     /* body {
         background-color: blue;
-    } 
+    }  */
     header {
         height: 180vh !important;
     }
@@ -128,9 +128,9 @@ and (orientation: portrait)  {
    and (device-width : 320px) 
    and (-webkit-min-device-pixel-ratio: 2)
    and (orientation: portrait) {
-    body {
+    /* body {
         background-color: violet;
-    }
+    } */
     header {
         height: 130vh !important;
     }

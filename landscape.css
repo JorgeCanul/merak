@@ -1,9 +1,9 @@
 /* ////////////// iPhone X,  */
 @media screen and (max-width: 991.98px) 
 and (orientation: landscape) {
-    body {
+    /* body {
         background-color: slategray;
-    }
+    } */
     .mainNav li a {
         
         border-bottom: none !important;
@@ -85,9 +85,9 @@ and (orientation: landscape) {
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3)
 {
-     body {
+     /* body {
         background-color: blue;
-    } 
+    }  */
     header {
         height: 180vh !important;
     }
@@ -120,9 +120,9 @@ and (orientation: landscape) {
 /* ////////////// iPhone 6, 7, 8 +,  */
 @media screen and (max-width: 767.98px) 
 and (orientation: landscape) {
-    body {
+    /* body {
         background-color: salmon;
-    }
+    } */
     .text-hero {
         padding-top: 1% !important;
     }
@@ -144,9 +144,9 @@ and (orientation: landscape) {
 /* //// iPhone 4/ iPhone 5/se//// */
 @media screen and (max-width: 575.98px)
 and (orientation: landscape)  {
-    body {
+    /* body {
         background-color: turquoise;
-    }
+    } */
     
     #intro span {
         padding: 70px !important;
@@ -159,9 +159,9 @@ and (min-device-width : 320px)
 and (max-device-width : 480px) 
 and (orientation : landscape) { 
 
-    body {
+    /* body {
         background-color: yellow;
-    }
+    } */
     header {
         height: 170vh !important;
     }
