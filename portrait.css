@@ -75,7 +75,6 @@ and (orientation: portrait)  {
         display: flex;
         justify-content: center;
         padding-left: 0;
-        
     }
     .social-items {
         text-align: center;
@@ -142,4 +141,16 @@ and (orientation: portrait)  {
         display: inline-block;
         font-size: 12px;
     }
+}
+
+@media screen 
+  and (device-width: 360px) 
+  and (device-height: 640px)
+  and (-webkit-min-device-pixel-ratio : 4) 
+  and (-webkit-device-pixel-ratio : 4)
+  and (orientation: portrait) {
+    body {
+        background-color: black !important;
+    }
+
 }
