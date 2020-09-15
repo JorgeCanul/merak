@@ -146,8 +146,8 @@ and (orientation: landscape) {
 and (orientation: landscape)  {
     /* body {
         background-color: turquoise;
-    }
-     */
+    } */
+    
     #intro span {
         padding: 70px !important;
     }
@@ -158,8 +158,8 @@ and (orientation: landscape)  {
 and (min-device-width : 320px) 
 and (max-device-width : 480px) 
 and (orientation : landscape) { 
-/* 
-    body {
+
+    /* body {
         background-color: yellow;
     } */
     header {
