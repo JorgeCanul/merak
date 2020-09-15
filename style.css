@@ -23,11 +23,6 @@ button {
     padding: 0 0 0 0 !important;
 }
 .pagination {
-    /* display: -ms-flexbox;
-    display: flex;
-    padding-left: 0;
-    list-style: none;
-    border-radius: .25rem; */
     place-content: center;
 }
 
@@ -420,7 +415,7 @@ and (min-width: 321px) {
         margin-top: 12px;
     }
 
-  @media screen and (max-width: 1400px)
+  @media screen and (max-width: 2560px)
   and (min-width: 992px) {
       /* body {
           background-color: violet;
