@@ -31,9 +31,7 @@ function myFunction() {
   }
 }
 
-
 const image = document.querySelectorAll('.portofolio-item-wrapper');
-
 image.forEach(function(img) {
   img.addEventListener('mouseover', function() {
       img.childNodes[1].classList.add('img-darken');
@@ -45,17 +43,10 @@ image.forEach(function(img) {
 
 ///////////////////////// Footer rights ///////////
 var date = new Date().getFullYear();
-console.log(date);
-
 var currentYear = document.querySelector('.allrights');
 currentYear.innerHTML = date;
-
 var logoAni = gsap.from('.logo', {duration: 2.5, opacity: 0, scale:0.1, ease: 'back'})
-
 //   gsap.registerPlugin(ScrollTrigger);
-
-
-
 /// starting
 let btn = document.querySelectorAll("button");
 const next1 = document.querySelector('.next1');
@@ -93,7 +84,6 @@ const pictues1 = {
       ]
   }
 
-
   const pictues3 = {
     image3:[
       './images/mike4.JPG'
@@ -129,8 +119,6 @@ const pictues1 = {
       './images/mike12.JPG'
       ]
   }
-
- 
     
 let currentItem = 0;
 
@@ -164,7 +152,6 @@ btnArr.map((el) => {
      }
   });
 });
-
 //// 1 ////
 next1.addEventListener('click', function() {
   currentItem++;
@@ -175,7 +162,6 @@ next1.addEventListener('click', function() {
     showItem1(currentItem);
   } 
 });
-
 //// 2 ////
 next2.addEventListener('click', function() {
   currentItem++;
@@ -186,7 +172,6 @@ next2.addEventListener('click', function() {
     showItem2(currentItem)
   } 
 })
-
 //// 3 ////
 next3.addEventListener('click', function() {
   currentItem++;
@@ -197,7 +182,6 @@ next3.addEventListener('click', function() {
     showItem3(currentItem)
   } 
 })
-
 //// 4 ////
 next4.addEventListener('click', function() {
   currentItem++;
@@ -208,7 +192,6 @@ next4.addEventListener('click', function() {
     showItem4(currentItem)
   } 
 })
-
 //// 5 ////
 next5.addEventListener('click', function() {
   currentItem++;
@@ -219,8 +202,6 @@ next5.addEventListener('click', function() {
     showItem5(currentItem)
   } 
 })
-
-
 //// 6 ////
 next6.addEventListener('click', function() {
   currentItem++;
@@ -231,7 +212,6 @@ next6.addEventListener('click', function() {
     showItem6(currentItem)
   } 
 })
-
 //// 7 ////
 next7.addEventListener('click', function() {
   currentItem++;
@@ -242,7 +222,6 @@ next7.addEventListener('click', function() {
     showItem7(currentItem)
   } 
 })
-
 //// 8 ////
 next8.addEventListener('click', function() {
   currentItem++;
@@ -253,7 +232,6 @@ next8.addEventListener('click', function() {
     showItem8(currentItem)
   } 
 })
-
 ////// 1 //////////
   function showItem1(items) {
     let item1 = pictues1.image1[items];
@@ -261,7 +239,6 @@ next8.addEventListener('click', function() {
       img1.src = item1;
     } 
   }
-
   ////// 2 //////////
   function showItem2(items) {
     let item2 = pictues2.image2[items];
@@ -269,7 +246,6 @@ next8.addEventListener('click', function() {
       img2.src = item2;
     }
   }
-
   ////// 3 //////////
   function showItem3(items) {
     let item3 = pictues3.image3[items];
@@ -277,7 +253,6 @@ next8.addEventListener('click', function() {
       img3.src = item3;
     }
   }
-
   ////// 4 //////////
   function showItem4(items) {
     let item4 = pictues4.image4[items];
@@ -299,7 +274,6 @@ next8.addEventListener('click', function() {
       img6.src = item6;
     }
   }
-
   ////// 7 //////////
   function showItem7(items) {
     let item7 = pictues7.image7[items];
@@ -307,7 +281,6 @@ next8.addEventListener('click', function() {
       img7.src = item7;
     }
   }
-
   ////// 8 //////////
   function showItem8(items) {
     let item8 = pictues8.image8[items];
@@ -320,9 +293,6 @@ next8.addEventListener('click', function() {
 function hasClass(element, className) {
   return (' ' + element.className + ' ').indexOf(' ' + className+ ' ') > -1;
 }
-
-
-////// Close btn //////
 // btnClose1.addEventListener('click', function() {
 //   if(hasClass(img1, 'first')) {
 //     img1.src = item1;

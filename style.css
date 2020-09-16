@@ -6,7 +6,6 @@ html {
     background-color: var(--body-main);
 }
 
-
 :root{
     --content-main: #767c77;
     --clr-main: #9cada4;
@@ -23,12 +22,11 @@ button {
     padding: 0 0 0 0 !important;
 }
 .pagination {
-    /* display: -ms-flexbox;
-    display: flex;
-    padding-left: 0;
-    list-style: none;
-    border-radius: .25rem; */
     place-content: center;
+}
+
+.modal-header {
+    margin-right: 36px !important;
 }
 
 h1, h2, h3 {
@@ -78,9 +76,6 @@ p {
 
 /*-------------------*/
     /* NAV */
-/*-------------------*/
-
-   
 img.logo {
     border-radius: 50% !important;
 }
@@ -96,15 +91,7 @@ nav {
     z-index: 2;
     position: -webkit-sticky;
     border-bottom: 2px solid transparent;
-    
 }
-/* .navbar-toggler:focus,
-  .navbar-toggler:active,
-  .navbar-toggler-icon:focus {
-  outline: #d92027 !important;
-  box-shadow: #d92027 !important;
-  border-color: #d92027 !important;
-} */
 
 .bg-light {
     background-color: var(--main) !important;
@@ -144,8 +131,6 @@ button:focus {
 
 /*-------------------*/
     /* header */
-/*-------------------*/
-
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/mike.JPG');
     height: 140vh;
@@ -160,11 +145,8 @@ section h1 {
     padding: 100px;
 }
 
-
-
 /*-------------------*/
     /* SECTION SERVICES */
-/*-------------------*/
  .services-text {
     font-size: 70%;
     line-height: 140%;
@@ -188,16 +170,12 @@ section h1 {
 
 /*-------------------*/
     /* icons */
-/*-------------------*/
 .icon-big {
     font-size: 260%;
     color:  var(--main);
 }
-
-
     /*-------------------*/
     /* buttons */
-    /*-------------------*/
     .btn:link,
     .btn:visited {
     font-weight: 300;
@@ -235,15 +213,10 @@ section h1 {
 
 /*-------------------*/
     /* Gallery */
-/*-------------------*/
-
 #gallery h2 {
     padding: 80px;
 }
-/* .showcase-items {
-    display: grid;;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-} */
+
 .showcase-items {
     display: -ms-grid;
     display: grid;
@@ -296,13 +269,11 @@ section h1 {
     color: seagreen;
 }
 
-
 .img-darken {
     transition: 1s;
     filter: brightness(10%);
     justify-content: center;
 }
-
 
 .contact-info a {
     text-decoration: none;
@@ -311,8 +282,6 @@ section h1 {
 }
 /*-------------------*/
     /* about */
-/*-------------------*/
-
 .about {
     font-size: 70%;
     line-height: 140%;
@@ -328,8 +297,6 @@ section h1 {
 
 /*-------------------*/
     /* footer */
-/*-------------------*/
-
 footer {
     background-color: var(--main);
 }
@@ -355,7 +322,6 @@ footer {
     border-radius: 15%;
 }
 
-
 .jorge-link {
     display: grid;
     grid-template-columns: 1fr;
@@ -374,9 +340,6 @@ footer {
     border-bottom: 1px solid #35d0ba;
 }
 
-
-
-
 /* onScroll add class  */
 .nav-border {
     border-bottom: 3px solid var(--logo-color);
@@ -389,7 +352,6 @@ footer {
     top: 0;
     width: 100%;
   }
-
 
   @media screen and (max-width: 1400px)
   and (min-width: 992px) {
@@ -425,5 +387,4 @@ footer {
         text-align: center;
         padding: 10px;
     }
-    
   }
