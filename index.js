@@ -83,7 +83,8 @@ let img8 = document.querySelector('.eigthPic');
 const pictues1 = {
   image1:[
     './images/mike2.JPG', 
-    './images/mike3.JPG'
+    './images/mike3.JPG',
+    './images/mike4.JPG'
    ]
   }
 
