@@ -97,7 +97,7 @@ const pictues1 = {
 
   const pictues3 = {
     image3:[
-      './images/mike4.JPG'
+      './images/mike4.jpg'
       ]
   }
 
@@ -127,7 +127,7 @@ const pictues1 = {
       
   const pictues8 = {
     image8:[
-      './images/mike12.JPG'
+      './images/mike12.jpg'
       ]
   }
 
