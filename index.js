@@ -66,7 +66,6 @@ const next5 = document.querySelector('.next5');
 const next6 = document.querySelector('.next6');
 const next7 = document.querySelector('.next7');
 const next8 = document.querySelector('.next8');
-
 // let btnClose1 = document.querySelector('.close1');
 let btnArr = Array.from(btn);
 
@@ -82,9 +81,8 @@ let img8 = document.querySelector('.eigthPic');
 
 const pictues1 = {
   image1:[
-    './images/mike2.JPG', 
-    './images/mike3.JPG',
-    './images/mike4.JPG'
+    './images/mike2.JPG'
+    
    ]
   }
 
