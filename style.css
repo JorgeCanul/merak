@@ -6,6 +6,7 @@ html {
     background-color: var(--body-main);
 }
 
+
 :root{
     --content-main: #767c77;
     --clr-main: #9cada4;
@@ -17,16 +18,15 @@ html {
     --box-shadow: 0px 11px 15px -7px rgba(0, 0, 0, 0.2), 0px 24px 38px 3px rgba(0, 0, 0, 0.14), 0px 9px 46px 8px rgba(0, 0, 0, 0.12);
 }
 
+.close {
+    margin-right: 1px !important;
+}
 button {
     border: 0 !important;
     padding: 0 0 0 0 !important;
 }
 .pagination {
     place-content: center;
-}
-
-.modal-header {
-    margin-right: 36px !important;
 }
 
 h1, h2, h3 {
@@ -73,9 +73,10 @@ p {
     margin-left: 0;
 }
 
-
 /*-------------------*/
     /* NAV */
+/*-------------------*/
+
 img.logo {
     border-radius: 50% !important;
 }
@@ -91,7 +92,15 @@ nav {
     z-index: 2;
     position: -webkit-sticky;
     border-bottom: 2px solid transparent;
+    
 }
+/* .navbar-toggler:focus,
+  .navbar-toggler:active,
+  .navbar-toggler-icon:focus {
+  outline: #d92027 !important;
+  box-shadow: #d92027 !important;
+  border-color: #d92027 !important;
+} */
 
 .bg-light {
     background-color: var(--main) !important;
@@ -131,6 +140,8 @@ button:focus {
 
 /*-------------------*/
     /* header */
+/*-------------------*/
+
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('./images/mike.JPG');
     height: 140vh;
@@ -145,8 +156,11 @@ section h1 {
     padding: 100px;
 }
 
+
+
 /*-------------------*/
     /* SECTION SERVICES */
+/*-------------------*/
  .services-text {
     font-size: 70%;
     line-height: 140%;
@@ -165,17 +179,21 @@ section h1 {
 }
 
 #services h2 {
-    padding: 60px 0 60px 0;
+    padding: 100px 0 10px 0;
 }
 
 /*-------------------*/
     /* icons */
+/*-------------------*/
 .icon-big {
     font-size: 260%;
     color:  var(--main);
 }
+
+
     /*-------------------*/
     /* buttons */
+    /*-------------------*/
     .btn:link,
     .btn:visited {
     font-weight: 300;
@@ -213,10 +231,15 @@ section h1 {
 
 /*-------------------*/
     /* Gallery */
+/*-------------------*/
+
 #gallery h2 {
     padding: 80px;
 }
-
+/* .showcase-items {
+    display: grid;;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+} */
 .showcase-items {
     display: -ms-grid;
     display: grid;
@@ -269,11 +292,13 @@ section h1 {
     color: seagreen;
 }
 
+
 .img-darken {
     transition: 1s;
     filter: brightness(10%);
     justify-content: center;
 }
+
 
 .contact-info a {
     text-decoration: none;
@@ -282,6 +307,8 @@ section h1 {
 }
 /*-------------------*/
     /* about */
+/*-------------------*/
+
 .about {
     font-size: 70%;
     line-height: 140%;
@@ -297,6 +324,8 @@ section h1 {
 
 /*-------------------*/
     /* footer */
+/*-------------------*/
+
 footer {
     background-color: var(--main);
 }
@@ -322,6 +351,7 @@ footer {
     border-radius: 15%;
 }
 
+
 .jorge-link {
     display: grid;
     grid-template-columns: 1fr;
@@ -340,6 +370,31 @@ footer {
     border-bottom: 1px solid #35d0ba;
 }
 
+
+
+@media screen and (max-width: 500px) 
+and (min-width: 321px) {
+    
+    .mainNav {
+        float: left;
+        font-size: 30px;
+        margin-right: 10px;
+        align-items: start;
+        margin-top: 12px;
+    }
+    header {
+        height: 90vh;
+    }
+    h1 {
+        font-size: 50px;
+        line-height: 0.7;
+        word-spacing: 4px;
+    }
+    #intro span {
+        padding: 10px;
+    }
+}
+
 /* onScroll add class  */
 .nav-border {
     border-bottom: 3px solid var(--logo-color);
@@ -353,7 +408,15 @@ footer {
     width: 100%;
   }
 
-  @media screen and (max-width: 1400px)
+    .mainNav {
+        float: left;
+        font-size: 30px;
+        margin-right: 10px;
+        align-items: start;
+        margin-top: 12px;
+    }
+
+  @media screen and (max-width: 2560px)
   and (min-width: 992px) {
       /* body {
           background-color: violet;
@@ -387,4 +450,9 @@ footer {
         text-align: center;
         padding: 10px;
     }
+    
+  }
+
+  .removeItmes {
+      display: none;
   }

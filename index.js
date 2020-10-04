@@ -1,3 +1,17 @@
+let closeNavItems = document.querySelector('.closeItems');
+let toggleItems = document.querySelector('.navbar-toggler-icon');
+  
+toggleItems.addEventListener('click', () => {
+  // navItems.style.display = 'none'? navItems.style.display = 'block': navItems.style.display = 'none';
+  // toggleItems.style.display = 'block'? toggleItems.style.display = 'none': toggleItems.style.display = 'block';
+  if(closeNavItems.style.display = 'none') {
+
+  }
+});
+
+
+
+
 $(function() {
   var scroll = $(document).scrollTop();
   var navHeight = $('vav').outerHeight();
