@@ -19,14 +19,24 @@ html {
 }
 
 .close {
-    margin-right: 1px !important;
+    margin-left: 95% !important;
 }
+
+.carImag {
+    /* float:  left !important; */
+      width:  100% !important;
+      height: 480px !important;
+      object-fit: cover !important;
+      /* background-size: cover !important; */
+}
+
+.prev .next {
+    color: white !important;
+}
+
 button {
     border: 0 !important;
     padding: 0 0 0 0 !important;
-}
-.pagination {
-    place-content: center;
 }
 
 h1, h2, h3 {
@@ -36,7 +46,6 @@ h1, h2, h3 {
 h1 {
     color: #fff;
 }
-
 
 h2 {
     font-size: 110%;
@@ -73,12 +82,10 @@ p {
     margin-left: 0;
 }
 
-
 /*-------------------*/
     /* NAV */
 /*-------------------*/
 
-   
 img.logo {
     border-radius: 50% !important;
 }
@@ -96,13 +103,6 @@ nav {
     border-bottom: 2px solid transparent;
     
 }
-/* .navbar-toggler:focus,
-  .navbar-toggler:active,
-  .navbar-toggler-icon:focus {
-  outline: #d92027 !important;
-  box-shadow: #d92027 !important;
-  border-color: #d92027 !important;
-} */
 
 .bg-light {
     background-color: var(--main) !important;
@@ -158,8 +158,6 @@ section h1 {
     padding: 100px;
 }
 
-
-
 /*-------------------*/
     /* SECTION SERVICES */
 /*-------------------*/
@@ -181,7 +179,7 @@ section h1 {
 }
 
 #services h2 {
-    padding: 60px 0 60px 0;
+    padding: 100px 0 10px 0;
 }
 
 /*-------------------*/
@@ -191,7 +189,6 @@ section h1 {
     font-size: 260%;
     color:  var(--main);
 }
-
 
     /*-------------------*/
     /* buttons */
@@ -229,8 +226,6 @@ section h1 {
     background-color: var(--clr-main);
     color: rgb(46, 46, 46);
  }
-
-
 /*-------------------*/
     /* Gallery */
 /*-------------------*/
@@ -238,10 +233,7 @@ section h1 {
 #gallery h2 {
     padding: 80px;
 }
-/* .showcase-items {
-    display: grid;;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-} */
+
 .showcase-items {
     display: -ms-grid;
     display: grid;
@@ -262,13 +254,17 @@ section h1 {
 
 .img-text-wrapper {
     position: absolute;
-    top: 0;
+    top: 2.5rem;
+    /* padding: 3rem; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    height: 100%;
-    text-align: center;
+    height: 40%;
+    width: 60%;
+    /* text-align: center; */
+    /* margin: 0 auto; */
+    margin-left: 20%;
 }
 
 .logo-wrapper ion-icon {
@@ -286,21 +282,29 @@ section h1 {
     font-weight: bold;
     color: transparent;
     transition: 1s;
+     /* padding: 20%; /*change padding to display title on hover */
+    /* place-items: center;
+    margin: 0 auto; */ 
+    /* position: relative; */
+    /* left: 3.9875rem; */
+    /* padding: 3.125rem; */
 }
 
 .img-text-wrapper:hover .subtitle {
     font-size: 15px;
     font-weight: bold;
-    color: seagreen;
-}
+    color: var(--logo-color);
+    place-items: center;
+    /* margin: 0 auto; */
+    text-transform: uppercase;
 
+}
 
 .img-darken {
     transition: 1s;
     filter: brightness(10%);
     justify-content: center;
 }
-
 
 .contact-info a {
     text-decoration: none;
@@ -310,7 +314,6 @@ section h1 {
 /*-------------------*/
     /* about */
 /*-------------------*/
-
 .about {
     font-size: 70%;
     line-height: 140%;
@@ -323,11 +326,9 @@ section h1 {
 .about h2 {
     padding: 40px;
 }
-
 /*-------------------*/
     /* footer */
 /*-------------------*/
-
 footer {
     background-color: var(--main);
 }
@@ -335,17 +336,18 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     margin-bottom: 0;
-
 }
 
 .social-footer li ion-icon {
     color:  var(--logo-color);
     transition: var(--trans);
+    filter: drop-shadow(0px 0px 10px  rgba(0,0,0,0.5));
 }
 
 .social-footer li ion-icon:hover {
     color: whitesmoke;
     transform: scale(1.1);
+    filter: drop-shadow(0px 0px 10px  rgba(0,0,0,0.5));
 }
 .social-items ion-icon {
     box-shadow: var(--box-shadow);
@@ -371,8 +373,6 @@ footer {
     color: #35d0ba;
     border-bottom: 1px solid #35d0ba;
 }
-
-
 
 @media screen and (max-width: 500px) 
 and (min-width: 321px) {
@@ -420,9 +420,6 @@ and (min-width: 321px) {
 
   @media screen and (max-width: 2560px)
   and (min-width: 992px) {
-      /* body {
-          background-color: violet;
-      } */
       #intro span {
         padding: 100px;
     }
@@ -452,5 +449,12 @@ and (min-width: 321px) {
         text-align: center;
         padding: 10px;
     }
-    
   }
+
+  /* .collapse:not(.show) {
+    display: none !important;
+} */
+
+.toogleClass {
+    display: none;
+}
