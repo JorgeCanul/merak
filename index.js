@@ -56,5 +56,5 @@ $(document).on('click','.navbar-collapse',function(e) {
 });
 
 $('.carousel').carousel({
-  interval: 9000
+  interval: 6000
 })
